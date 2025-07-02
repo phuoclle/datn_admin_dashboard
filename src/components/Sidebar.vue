@@ -1,7 +1,7 @@
 <template>
   <div class="sidebar">
     <div class="sidebar-header">
-      <h2>ELARIS HOTEL</h2>
+      <h2 class="pl-2">ELARIS HOTEL</h2>
     </div>
     <nav class="nav-links">
       <router-link
