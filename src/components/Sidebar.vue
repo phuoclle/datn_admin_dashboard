@@ -10,7 +10,7 @@
         :class="{ active: route.path === '/' }"
       >
         <span class="icon"><i class="fa-solid fa-house"></i></span>
-        <span class="label">Trang chủ</span>
+        <span class="label">Quản lý phòng</span>
       </router-link>
 
       <router-link

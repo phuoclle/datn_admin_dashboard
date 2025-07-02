@@ -13,7 +13,7 @@
           <img
             :src="booking.image"
             alt="Hình phòng"
-            class="w-full md:w-48 h-100 md:h-32 object-cover rounded-lg border border-gray-300 shadow-sm"
+            class="w-full md:w-48 md:h-32 object-cover rounded-lg border border-gray-300 shadow-sm"
           />
         </div>
 
@@ -93,7 +93,7 @@ const bookings = ref([
     status: 'Đã hủy',
     staff: 'Quang Huy',
     total: '2.500.000 VND',
-    image: 'https://placehold.co/192x128/d1e7dd/006D77?text=PHONG+205',
+    image: 'https://dyf.vn/wp-content/uploads/2021/01/tai-sao-thiet-ke-phong-ngu-khach-san-quan-trong-nhat.jpg',
   },
 ]);
 </script>
@@ -114,7 +114,6 @@ p{
 
 button{
   margin-top: 50px;
-  margin-right: 40px;
 }
 
 
