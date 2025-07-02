@@ -1,6 +1,6 @@
 <template>
   <div class="p-6 bg-gray-100 min-h-screen font-inter">
-    <h3 class="text-2xl font-bold text-gray-800 mb-6">Chi tiết đặt phòng</h3>
+    <h3 class="text-2xl font-bold text-gray-800 mb-6" >Chi tiết đặt phòng</h3>
 
     <div class="flex flex-col gap-y-8"> <!-- cách nhau 2rem -->
       <div
@@ -13,18 +13,20 @@
           <img
             :src="booking.image"
             alt="Hình phòng"
-            class="w-full md:w-48 h-40 md:h-32 object-cover rounded-lg border border-gray-300 shadow-sm"
+            class="w-full md:w-48 h-100 md:h-32 object-cover rounded-lg border border-gray-300 shadow-sm"
           />
         </div>
 
         <!-- Info -->
         <div class="flex-1 grid  grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-8 text-sm text-gray-800 w-full">
+           <div class="content">
           <div>
             <p class="text-xl font-bold text-[#006D77] mb-2">{{ booking.roomName }}</p>
             <p><span class="text-gray-600">Ngày đặt:</span> <span class="text-[#007C91] font-semibold">{{ booking.bookingDate }}</span></p>
             <p><span class="text-gray-600">Ngày nhận phòng:</span> <span class="text-[#007C91] font-semibold">{{ booking.checkIn }}</span></p>
             <p><span class="text-gray-600">Ngày trả phòng:</span> <span class="text-[#007C91] font-semibold">{{ booking.checkOut }}</span></p>
             <p><span class="text-gray-600">Tên khách hàng:</span> <span class="text-[#007C91] font-semibold">{{ booking.customerName }}</span></p>
+          </div>
           </div>
 
           <div>
@@ -37,7 +39,7 @@
         </div>
 
         <!-- Button -->
-        <div class="mt-6 md:mt-0 md:ml-6">
+        <div class=" mt-6 md:mt-0 md:ml-6">
           <button class="bg-[#199DB2] text-white px-6 py-3 rounded-lg hover:bg-[#147e90] transition duration-200 font-semibold shadow-md">
             Xác nhận đơn
           </button>
@@ -63,11 +65,11 @@ const bookings = ref([
     status: 'Đã xác nhận',
     staff: 'Minh Minh',
     total: '1.200.000 VND',
-    image: 'https://cdn.luxstay.com/rooms/34714/large/room_34714_185_1603783729.jpg',
+    image: 'https://dyf.vn/wp-content/uploads/2021/01/tai-sao-thiet-ke-phong-ngu-khach-san-quan-trong-nhat.jpg',
   },
   {
     id: 2,
-    roomName: 'Phòng Đôi Tiêu Chuẩn - 101',
+    roomName: 'Phòng Đôi - 101',
     bookingDate: '10/5/2025',
     checkIn: '15/5/2025',
     checkOut: '17/5/2025',
@@ -77,7 +79,7 @@ const bookings = ref([
     status: 'Đang chờ xử lý',
     staff: 'Lan Anh',
     total: '800.000 VND',
-    image: 'https://placehold.co/192x128/e0f2f1/007C91?text=PHONG+101',
+    image: 'https://dyf.vn/wp-content/uploads/2021/01/tai-sao-thiet-ke-phong-ngu-khach-san-quan-trong-nhat.jpg',
   },
   {
     id: 3,
@@ -101,4 +103,19 @@ const bookings = ref([
 .font-inter {
   font-family: 'Inter', sans-serif;
 }
+
+.content{
+  padding-left: 20px;
+}
+
+p{
+  margin-bottom: 4px;
+}
+
+button{
+  margin-top: 50px;
+  margin-right: 40px;
+}
+
+
 </style>
